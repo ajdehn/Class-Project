@@ -1,0 +1,16 @@
+class TranscriptEntryTester  
+{  
+  public static void main(String args[])  
+  {  
+    TranscriptEntry transcript;
+    Transcript t;
+    transcript = new TranscriptEntry();
+    transcript.setStudent("A.J");
+    transcript.setTranscript("Biology");
+    System.out.println(transcript.getStudent());
+    //Should display just the student name
+    System.out.println(transcript.getTranscript());
+    //Should display the name of the class
+    System.out.println(transcript.toString()+"\n");  
+  }  
+} 
