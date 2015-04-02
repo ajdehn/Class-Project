@@ -1,0 +1,37 @@
+import java.util.*;
+import java.io.*;
+
+public class CourseCatalog {
+  //private courses;
+  //Will be map courseNo, course
+  
+  private String display; 
+  private int addCourse;
+  private int findCourse;
+  private String isEmpty;
+ 
+  
+public void display() 
+{
+ //display courses
+}
+
+
+public void addCourse(Course c)
+{
+//adds courses
+  
+}
+
+public int findCourse(String courseNo)
+{
+ //finds courses 
+  return 0;
+}
+
+public boolean isEmpty()
+{
+  return false;
+  //Will be checking course catalog
+}
+}
