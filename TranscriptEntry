@@ -1,0 +1,80 @@
+public class TranscriptEntry extends Transcript
+{
+  //instance variables
+  private double gradeInfo;
+  // don't know if they want letter grade or percentage grade
+  //private String student;
+  private String studentName;
+  private String sectionInfo;
+  private String transcriptInfo;
+  private Transcript transcript;
+  private Boolean failing = true;
+  //unsure
+  
+  //public Student setStudent(Student)()
+  //Cannot work with this till connected with Student class?
+  public TranscriptEntry()
+  {
+    studentName= "Unassigned";
+    transcriptInfo="Unassigned";
+  }
+  public TranscriptEntry(String newName, String newInfo)
+  {
+    studentName=newName;
+    transcriptInfo=newInfo;
+  }
+  public void setStudent(String newStudent)
+  {
+    studentName=newStudent;
+  }
+  public String getStudent()
+  {
+    return studentName;
+  }
+  //public Section setSection(Section)()
+  public void setSection(String newSection)
+  // Changed from section to string for tester class
+  {
+    sectionInfo = newSection;
+  }
+  public String getSection()
+  {
+    return sectionInfo;
+  }
+  //public double setGrade(double grade)()
+  public void setGrade(double newGrade)
+  {
+    gradeInfo = newGrade;
+  }
+  public double getGrade()
+  {
+    return gradeInfo;
+  }
+  //public Transcript setTranscript(Transcript)()
+  public void setTranscript(String newTranscript)
+  {
+    transcriptInfo=newTranscript;
+  }
+  public String getTranscript()
+  {
+    return transcriptInfo;
+  }
+  public void validateGrade(double newGrade)
+  {
+    gradeInfo=newGrade;
+    if (gradeInfo>60)
+    {
+      failing=false;
+    }
+  }
+  public Boolean passingGrade()
+  {
+    return failing;
+  }
+  public String toString()
+  {
+    String value=("The owner of this transcript is " + getStudent() + "."+
+                  "\n" + "His class is in room " + getTranscript() + ".");
+    return value;
+  }
+}
