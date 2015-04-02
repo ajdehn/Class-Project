@@ -1,0 +1,25 @@
+/**
+ * models Enrollment Status.
+ * Possible values of Enrollment Status.
+ * @author Haylie M., Cassie M., Jaqulyn S, Andrew D.
+ */
+public enum EnrollmentStatus{
+  success("Enrollment successful!"), secFull("Enrollment Failed: Section was full."),
+    preReq("Enrollment Failed: prerequisites not satisfied. "), prevEnroll("Enrollment Failed: Previously Enrolled.");
+  
+  private String value; //Enrollment Status value
+  /**
+   * Sets value to given value
+   * @param value to be given
+   */
+  EnrollmentStatus(String value){
+    this.value = value;
+  }
+  /**
+   * Gets the value of enrollment status
+   * @return value of enrollment status
+   */
+  public String getValue(){
+    return value;
+  }
+}
