@@ -1,0 +1,163 @@
+public class Section
+{
+  private int sectionNo;
+  private String timeOfDay;
+  private int room;
+  private int seatingCapacity;
+  private String representedCourse;
+  private String dayOfWeek;
+  private String offeredIn;
+  // Schedule of classes
+  private String instructor;
+  private int fullEnrollment;
+  // ???
+  //private Student enrolledStudents;
+  //private Student assignedGrades;
+  
+  // Might need to be from transcript entry
+  
+  public Section()
+  {
+    sectionNo=2;
+    room= 340;
+    seatingCapacity = 200;
+    instructor="Miller";
+  }
+  public Section(int newSectionNo, int newRoom, int newCapacity, String newInstructor)
+  {
+    sectionNo=newSectionNo;
+    room= newRoom;
+    seatingCapacity = newCapacity;
+    instructor=newInstructor;
+  }
+  public void setSectionNo(int newSectionNo)
+  {
+    sectionNo = newSectionNo;
+  }
+  public int getSectionNo()
+  {
+    return sectionNo;
+  }
+  public void setDayOfWeek(String newDay)
+  {
+    dayOfWeek=newDay;
+  }
+  public String getDayOfWeek()
+  {
+    return dayOfWeek;
+  }
+  public void setTimeOfDay(String newTime)
+  {
+    timeOfDay=newTime;
+  }
+  public String getTimeOfDay()
+  {
+    return timeOfDay;
+  }
+  public void setInstructor(String newInstructor)
+  {
+    instructor=newInstructor;
+  }
+  public String getInstructor()
+  {
+   return instructor; 
+  }
+  public void setRepresentedCourse(String newRepCourse)
+  {
+    representedCourse= newRepCourse;
+  }
+  public String getRepresentedCourse()
+  {
+    return representedCourse;
+  }
+  public void setRoom(int newRoom)
+  {
+    room= newRoom;
+  }
+  public int getRoom()
+  {
+    return room;
+  }
+  public void setSeatingCapacity(int newCapacity)
+  {
+    seatingCapacity= newCapacity;
+  }
+  public int getSeatingCapacity()
+  {
+    return seatingCapacity;
+  }
+  public void setOfferedIn(String newOffering)
+  {
+    offeredIn= newOffering;
+  }
+  public String getOfferedIn()
+  {
+    return offeredIn;
+  }
+  /*
+  public String getFullSelectionNo()
+  {
+    //return conctenation of CourseNo-SectionNo()
+  }
+  
+  public Student enroll()
+  {
+    //<Enum> EnrollmentStatus
+  }
+  */
+  public Boolean confirmSeatAvailability()
+  {
+    return true;
+    //will return true if there is room in the class
+  }
+  
+  public int getTotalEnrollment(int totalEnrollment)
+  {
+    fullEnrollment = totalEnrollment;
+    return fullEnrollment;
+    //Need to find a way to see how many students are actually there For Loop???
+  }
+
+  public void display()
+  {
+    System.out.println(" ");
+    
+  }
+  
+  public String displayStudentRoster()
+  {
+    //Display all names of students enrolled in this class
+    return(" ");
+  }
+  /*
+  public Student getGrade()
+  {
+    //Student (grade)
+  }
+  public Student postGrade()
+  {
+    
+  }
+  */
+  public Boolean isSectionOf()
+  {
+    //Will return what this needs to be a part of
+    return true;
+  }
+  
+  /*  public Section(int newSectionNo, int newRoom, int newCapacity, String newInstructor)
+  {
+    sectionNo=newSectionNo;
+    room= newRoom;
+    seatingCapacity = newCapacity;
+    instructor=newInstructor;
+    */
+    public String toString()
+  {
+      String value = ("The section number of this class is " + getSectionNo() + "." + "\n"+
+        "The room of this is in " + getRoom() + "." + "\n"+
+        "The seating capacity is " + getSeatingCapacity() + "."+ "\n"+
+        "The instructor is " + getInstructor()+ ".");
+    return value;
+  }
+}
