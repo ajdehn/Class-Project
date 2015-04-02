@@ -1,0 +1,109 @@
+public class Student extends Person {
+  
+  //instance variables
+  private Person student; 
+  private String major;
+  private String degree;
+  private Transcript transcript;
+  //private List<Section> attends;
+  
+  /*Constructor
+   * 
+   */
+  public Student()
+  {
+    student = new Person();
+    major = "UNASSIGNED";
+    degree = "UNASSIGNED";
+    //attends = "";
+  }
+  
+  public void setMajor(String major)
+  {
+    this.major = major;
+  }
+  
+  //returns major
+  public String getMajor()
+  {
+    return major;
+  }
+  
+  //sets degree
+  public void setDegree(String degree)
+  {
+    this.degree = degree;
+  }
+  
+  //returns degree
+  public String getDegree()
+  {
+    return degree;
+  }
+  
+  //sets Transcript
+  public void setTranscript(Transcript transcript)
+  {
+    this.transcript = transcript;
+  }
+  
+  //returns transcript
+  public Transcript getTranscript()
+  {
+    return transcript;
+  }
+  public void display()
+  {
+    
+  }
+  /*
+   public void display()
+   {
+   System.out.println("DisplayInformation");
+   }
+   */
+  public String toString()
+  {
+    return("Hi");
+  }
+  
+  //shows all of the Courses available
+  public void displayCourseSelection()
+  {}
+  
+  public void addSection(Section section)
+  { 
+    //add section 
+  }
+  
+  public void dropSection(Section section)
+  {
+    //remove section
+  }
+  
+  public void isEnrolledIn(Section section)
+  {
+    
+    //if enrolled return true
+    //else return false
+  }
+  
+  public void isCurrentlyEntrolledInSimilar(Section section)
+  {
+    
+  }
+  
+  //prints transcript
+  public void printTranscript()
+    
+  { 
+    //this.getTranscript().display(); 
+  }
+  
+  //returns sections enrolled in 
+  public void getEnrolledSections()
+  {
+    //return list of enrolled classes
+  }
+  
+}
