@@ -1,0 +1,13 @@
+public class PersonTester
+{
+  public static void main(String args[])
+  {
+    Person person1, person2;
+    person1 = new Person();
+    person1.setSsn("961-25-1234");
+    person2 = new Person();
+    person2.setSsn("621-54-645");
+    System.out.println(person1.getSsn());
+    System.out.println(person2.getSsn());
+  }
+}
