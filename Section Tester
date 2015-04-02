@@ -1,0 +1,14 @@
+class SectionTester  
+{  
+  public static void main(String args[])  
+  {  
+    Section section1;
+    section1 = new Section();
+    section1.setSectionNo(101);
+    section1.setRoom(102);
+    section1.setSeatingCapacity(103);
+    section1.setInstructor("Rasanjalee");
+    System.out.println(section1.toString());
+
+  }  
+} 
