@@ -1,0 +1,45 @@
+/**
+ * models Faculty
+ * Possible values of Enrollment Status.
+ * @author Haylie M., Cassie M., Jaqulyn S, Andrew D.
+ */
+public class Faculty
+{
+  private Professor professors; // Map<ssn, Professor>
+  
+  
+  public void display()
+  {
+    System.out.println(" "); //displays professors in Faculty
+  }
+  
+  /**
+   * Adds Professor to the faculty
+   * @param professor The professor to be addded
+   */
+  public void addProfessor(Professor professor)
+  {
+    //add professor to the Faculty
+  }
+  
+  /**
+   * finds professor with specified Social Security Number
+   * @param social security number
+   */
+  public Professor findProfessor(String ssn)
+  {
+    
+    //return professor;
+    //Will need to search through map
+    return professors;
+  }
+  
+  /**
+   * Checks if Faculty is empty
+   * @return true or false
+   */
+  public Boolean isEmpty()
+  {
+   return true;
+  }
+}
