@@ -1,0 +1,23 @@
+class StudentTester  
+{  
+  public static void main(String args[])  
+  {  
+    Student student1;
+    //initializing student
+    Transcript transcript, transcript2;
+    transcript = new Transcript();
+    //Created a new transcript
+    transcript.setStudentOwner("A.J. Dehn");
+    student1 = new Student();
+    //Created a new student
+    student1.setMajor("Accounting");
+    System.out.println(student1.getMajor());
+    student1.setDegree("Bachelor's");
+    System.out.println(student1.getDegree());
+    student1.setTranscript(transcript);
+    transcript2 = student1.getTranscript();
+    //Set the object of transcript 2 to the object of transcript
+    
+    System.out.println(transcript2.toString());
+  }  
+} 
