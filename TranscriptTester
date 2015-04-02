@@ -1,0 +1,11 @@
+class TranscriptTester  
+{  
+  public static void main(String args[])  
+  {  
+    Transcript transcript;
+    transcript = new Transcript();
+    transcript.setStudentOwner("A.J. Dehn");
+    //System.out.println(getStudentOwner());
+    System.out.println(transcript.toString()+"\n");  
+  }  
+} 
