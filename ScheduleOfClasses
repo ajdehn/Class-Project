@@ -1,0 +1,48 @@
+public class ScheduleOfClasses
+{
+  private String semester;
+  //private sectionsOffered; 
+  
+  public ScheduleOfClasses()
+  {
+    semester = "unassigned";
+  }
+  
+  public void setSemester(String semester)
+  {
+    this.semester = semester;
+  }
+  
+  public String getSemester()
+  {
+    return semester;
+  }
+  
+  public String getSectionsOffered()
+  {
+  //get Sections offered
+    return " ";
+  }
+  
+  public void display()
+  {
+    System.out.println("Display Information Here");
+  }
+  
+  public void addSection(Section section)
+  { 
+  //add section
+  }
+  
+  public void findSection(Section fullSectionNo)
+  {
+  //find section
+  }
+  
+  public void isEmpty()
+  {
+    //if there are classes return true;
+    //else return false;
+  }
+  
+}
