@@ -1,0 +1,44 @@
+public class Person {
+  
+  /**
+ * 
+ * @authors Cassie M, Haylie M, Andrew D., and Jackie S.
+ *         based on a template by CSB|SJU Computer Science faculty members
+ */
+ 
+  //instance variables
+  private String name;
+  private String ssn;
+  
+  /*Constructor comments here
+   * 
+   */
+  public Person()
+  {name = "UNASSIGNED";
+   ssn = "UNASSIGNED";}
+  
+  //sets Person name to name imputed
+  public void setName(String name)
+  {this.name = name;}
+  
+  //sets Person ssn to ssn imputed
+  public void setSsn(String ssn)
+  {this.ssn = ssn;}
+  
+  //returns name
+  public String getName()
+  {return name;}
+  
+  //returns ssn
+  public String getSsn()
+  {return ssn;}
+  
+  //returns name and ssn
+  public void display()
+  { System.out.println("Name: "+name+ "  Ssn: " +ssn);}
+  
+  public  String toString()
+  {return "Name: "+name+ "  Ssn: " +ssn;}
+  
+  
+}
