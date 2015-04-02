@@ -1,0 +1,53 @@
+public class Transcript
+{
+  //private String transcriptEntries;
+  //Unsure
+  //private Student studentOwner;
+  private String studentOwner;
+  private TranscriptEntry newTranscriptEntry;
+  
+  //public Student setStudentOwner(String Student)()
+  //Wait till connected to student class
+  
+  public Transcript()
+  {
+    
+  }
+  
+  public Transcript(String newStudent)
+  {
+    studentOwner=newStudent;
+  }
+  
+  public void setStudentOwner(String newStudent)
+  {
+    studentOwner=newStudent;
+  }
+  public String getStudentOwner()
+  {
+    return studentOwner;
+  }
+  /*
+   public Boolean verifyCompletion(Course)()
+   {
+   
+   }
+   */
+  
+  public void addTranscriptEntry(TranscriptEntry inputTranscriptEntry)
+  {
+    //Will come with an array list
+    this.newTranscriptEntry=inputTranscriptEntry;
+  }
+  
+  
+  public void display()
+  {
+    System.out.println("Display correct info");
+  }
+    public String toString()
+  {
+    String value=("The owner of this transcript is " + getStudentOwner() + ".");
+    return value;
+  }
+}
