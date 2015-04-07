@@ -101,9 +101,14 @@ public class Section
     //return conctenation of CourseNo-SectionNo()
   }
   
-  public Student enroll()
+  public EnrollmentStatus enroll(Student S)
   {
-    //<Enum> EnrollmentStatus
+    Transcript transcript = s.getTranscript();
+    
+    if(s.isCurrentlyEnrolledInSimilar(this)||transcript.verifyCompletion(this.getRepresentedCourse())
+    { return EnrollmentStatus.prevEnroll;
+    
+    
   }
   */
   public Boolean confirmSeatAvailability()
