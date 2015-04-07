@@ -1,11 +1,12 @@
 public class Section
 {
   private int sectionNo;
+  private String dayOfWeek;
   private String timeOfDay;
   private int room;
   private int seatingCapacity;
+  
   private String representedCourse;
-  private String dayOfWeek;
   private String offeredIn;
   // Schedule of classes
   private String instructor;
